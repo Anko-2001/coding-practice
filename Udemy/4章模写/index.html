@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+     <link rel="stylesheet" href="css/style.css">
+    <title>ご利用アンケート</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+           <div class="row">
+            <div class="col-sm-6">
+                <p>ご利用アンケート</p>
+            </div>
+
+            <div class="col-sm-6 text-right">
+                <a href="/">HOME</a>
+            </div>
+
+           </div>
+        </header>
+    </div>
+        
+        <hr>
+
+    <div class="container">
+        <form action="" method="post" class="row">
+            <div class="col-sm-8 offset-sm-2">
+                <p>書いてください</p>
+            
+            
+            <div class="form-group">
+                <label for="name">
+                    お名前<span class="badge badge-danger">必須</span>
+                </label>
+                <input type="text" id="name" name="name" placeholder="ごみ" required class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="job">
+                    ご職業
+                </label>
+                <select id="job" name="job" class="form-control">
+                    <option >選べ</option>
+                    <option value="もこう">もこう</option>
+                    <option value="jun">jun</option>
+                    <option value="futon">futon</option>
+                </select>
+            </div>
+
+           
+
+            <div class="form-group">
+                <label>知りたい</label>
+                <div class="form-check">
+                    <input id="q1_1" type="checkbox" name="q1" value="html" class="form-check-input" >
+                    <label for="q1_1">HTML</label>
+                </div>
+                <div class="form-check">
+                    <input id="q1_2" type="checkbox" name="q1" value="java" class="form-check-input" >
+                    <label for="q1_2">java</label>
+                </div><div class="form-check">
+                    <input id="q1_3" type="checkbox" name="q1" value="hanjou" class="form-check-input" >
+                    <label for="q1_3">hanjou</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="d-block">理解度</label>
+                <div class="form-check-inline">
+                    <input type="radio" class="form-check-input" name="q2" id="q2_1" value="1">
+                    <label for="q2_1">もこうレベル</label>  
+                </div>
+                <div class="form-check-inline">
+                    <input type="radio" class="form-check-input" name="q2" id="q2_2" value="2">
+                    <label for="q2_2">布団レベル</label>  
+                </div>
+                <div class="form-check-inline">
+                    <input type="radio" class="form-check-input" name="q2" id="q2_3" value="3">
+                    <label for="q2_3">加藤レベル</label>  
+                </div>
+                <div class="form-check-inline">
+                    <input type="radio" class="form-check-input" name="q2" id="q2_4" value="4">
+                    <label for="q2_4">はんじょうレベル</label>  
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <label for="message">goiken</label>
+                <textarea id="message" name="message" rows="10" class="form-control"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">送信</button>
+            </div>
+
+        </form>
+        </div>
+        <hr>
+
+        <div class="container">
+        <footer >
+            <p>&copy;もこじゅん</p>
+        </footer>
+        </div>
+   
+    </div>
+
+      
+    
+</body>
+</html>

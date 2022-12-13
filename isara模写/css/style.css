@@ -1,0 +1,50 @@
+header img{
+    width:128px;
+}
+
+header{
+    position:fixed;
+    z-index:10px;
+    top:0;
+    background-color:#fff ;
+    width: 100%;
+}
+
+.title-1{
+    display: inline-block;
+}
+
+.title-2{
+    display: inline-block;
+    vertical-align: bottom;
+    padding-bottom: 2px;
+    font-weight:bold;
+}
+.title-2 p{
+    margin:0;
+}
+
+.header-btn{
+    
+    position:absolute;
+    right:0;
+    bottom:20px;
+    vertical-align: bottom;
+    padding-bottom: 2px;
+}
+
+.header-btn p{
+    margin: 0;
+}
+
+.title{
+    width:1170px ;
+    padding:20px 0;
+    margin:0 auto;
+    position:relative;
+}
+
+.container{
+    margin: 0;
+    padding: 0;
+}

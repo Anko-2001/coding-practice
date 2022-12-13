@@ -1,0 +1,115 @@
+.container{
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgb(189, 189, 189);
+    background-color: white;
+    padding: 0;
+    max-width: 800px;
+}
+
+body{
+    background-color: rgb(247, 235, 235);
+    padding: 10px;
+    color: #666;
+    font-size: 14px;
+}
+
+header{
+    text-align: center;
+    background-color: rgb(161, 94, 5);
+   color: white;
+   padding: 10px;
+}
+header h1{
+    margin: 0;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+.content{
+    padding: 20px;
+}
+
+.title p{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: inline-block;
+    position: relative;
+}
+
+img{
+    float: left;
+    margin-right:10px ;
+    margin-bottom: 10px;
+}
+
+.aka{
+    background-color: red;
+    color: white;
+    font-size: 11px;
+    padding: 3px 3px;
+    display: inline-block;
+    position: absolute;
+    right: -48px;
+    top: 4px;
+}
+
+
+
+
+.songs h2{
+    font-size: 17px;
+    background-color: blanchedalmond;
+    padding: 5px 0 5px;
+    clear: left;
+    margin: 0;
+}
+
+li{
+    border-bottom:1px solid burlywood;
+    width: 50%;
+    float: left;
+   
+    padding: 5px 10px;
+    
+}
+
+.songs ol{
+    list-style: decimal inside;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+.clearfix:after{
+    content:"";
+    display: table;
+    clear: both;
+}
+
+footer{
+    text-align: center;
+    font-size: 80%;
+    background-color: rgb(221, 221, 221);
+}
+
+@media only screen and (max-width:600px){
+     .description img{
+         float:none;
+         display:block;
+         margin: 0 auto;
+     }
+
+     header h1{
+         font-size: 12px;
+     }
+
+     .information h1{
+         font-size: 14px;
+     }
+
+     .songs li{
+         float: none;
+         width: inherit;
+     }
+}

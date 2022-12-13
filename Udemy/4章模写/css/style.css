@@ -1,0 +1,24 @@
+header{
+    margin-top: 30px;
+    
+}
+
+hr{
+    border-width: 3px;
+    border-color: rgb(191, 231, 231);
+}
+
+header p{
+    font-size: 18px;
+    font-weight: bold;
+    color: cadetblue;
+}
+
+form p{
+    margin-top: 20px;
+  
+}
+
+.form-group>label{
+    font-weight: bold;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/sanitize.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+    <title>button</title>
+    
+</head>
+<body>
+
+    <div align="center" style="width: 400px; margin: auto; margin-top: 250px;">
+    <button id ="bt1" class="button" onClick="OnButtonClick();jyan();result()">
+        グーorパーorチョキ
+    </button>
+    <input type="text" id = "inbox">
+    <p id = "enemy">
+        なにをだす？？
+    </p>
+    <p id="re">
+
+    </p>
+        </div>
+</body>
+<script language="javascript" type="text/javascript">
+    function OnButtonClick() {
+        
+        target = document.getElementById("bt1");
+        target.style = "background-color:red;";
+    }
+    function jyan(){
+        var num = Math.random();
+        console.log(3);
+        var push = document.getElementById("enemy");
+        if(num < 0.33){
+        push.innerHTML = "パー"
+    }else if(num < 0.66){
+        push.innerHTML = "グー"
+    }else{
+        push.innerHTML = "チョキ"
+    }
+    }
+
+    function result(){
+       
+      box = document.getElementById("inbox");
+      player = box.value;
+      bun = document.getElementById("enemy");
+      enemy = bun.innerHTML;
+
+      
+      
+
+      result1 = document.getElementById("re")
+      
+      if(player === enemy){
+         
+          result1.innerHTML = "引き分け";
+      }
+     
+
+      if(player === 'パー'){
+          if(enemy === 'チョキ'){
+            result1.innerHTML = "お前の負け";
+          }else{
+              result1.innerHTML = "お前の勝ち";
+          }
+      }
+      if(player === 'チョキ'){
+          if(enemy === 'グー'){
+            result1.innerHTML = "お前の負け";
+          }else{
+              result1.innerHTML = "お前の勝ち";
+          }
+      }
+      if(player === 'グー'){
+          if(enemy === 'パー'){
+            result1.innerHTML = "お前の負け";
+          }else{
+              result1.innerHTML = "お前の勝ち";
+          }
+      }
+      
+
+
+      
+    }
+</script>
